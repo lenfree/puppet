@@ -3,4 +3,12 @@ class puppet {
 	source => 'puppet:///modules/puppet/papply.sh',
 	mode   => '0755',
     }
+
+    file { '/usr/local/bin/pull-updates':
+	source => 'puppet:///modules/puppet/pull-updates.sh',
+	mode   => '0755'
+    }
+
 }
+
+
