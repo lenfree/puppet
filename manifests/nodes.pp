@@ -3,3 +3,9 @@ node "puppet01.localdomain.com" {
 	    content => "Hello, world\n",
 	}
 }
+
+node "cookbook1" {
+        file { '/tmp/hello':
+            content => "Hello, cookbook1\n",
+        }
+}
