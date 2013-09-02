@@ -1,7 +1,7 @@
-class sshd::config {
-        file { '/etc/ssh/sshd_config':
-        source  => 'puppet:///modules/sshd/sshd_config',
+class httpd::config($path) {
+        file { '/etc/httpd/conf/httpd.conf':
+        source  => '${path}',
         mode    => '0600',
-        require => Class[sshd::install],
+        require => Class[httpd::install],
     }
 }
