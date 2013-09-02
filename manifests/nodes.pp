@@ -13,7 +13,3 @@ node "cookbook1.localdomain.com" {
 
 }
 
-node "lenfree-env.wg.dir.telstra.com" {
-	include sshd
-	include network
-}
